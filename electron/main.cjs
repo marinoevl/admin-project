@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
-const installExtension = require('electron-devtools-installer');
 const path = require('node:path');
 const { ipcMain } = require('electron');
+require('dotenv').config()
 
 let mainWindow;
 
