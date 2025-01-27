@@ -7,7 +7,7 @@
   "author": "marinoevl",
   "description": "Admin project Vue + Vite + Electron",
   "scripts": {
-    "dev": "concurrently \"vite\" \"electron .\"",
+    "dev": "concurrently \"vite\" \"NODE_ENV=development electron .\"",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",

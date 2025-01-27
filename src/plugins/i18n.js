@@ -27,9 +27,11 @@ const messages = {
   }
 }
 
+
+
 export const i18n = createI18n({
   legacy: false, // Vuetify does not support the legacy mode of vue-i18n
-  locale: 'en',
+  locale: navigator.language.split('-')[0],
   fallbackLocale: 'es',
   messages,
 })
