@@ -6,7 +6,8 @@
 
 // Styles
 // import '@mdi/font/css/materialdesignicons.css';
-import 'vuetify/styles';
+// import 'vuetify/styles';
+import '@/scss/main.scss'
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
@@ -59,4 +60,12 @@ export default createVuetify({
     },
     defaultTheme: 'light', // Set 'dark' as default if needed
   },
+  typography: {
+    font: {
+      family: 'Poppins, Inter, sans-serif',
+    },
+    styles: {
+      configFile: 'src/styles/settings.scss',
+    },
+  }
 });

@@ -9,7 +9,7 @@ const { t } = useI18n();
     <!-- Header -->
     <v-row>
       <v-col>
-        <h2 class="primary--text">{{ t("example.title") }}</h2>
+        <span class="primary--text text-h4">{{ t("example.title") }}</span>
       </v-col>
       <v-col class="text-end">
         <v-btn color="primary" class="white--text">Add New Record</v-btn>
@@ -29,7 +29,7 @@ const { t } = useI18n();
     <!-- Table -->
     <v-table>
       <template v-slot:default>
-        <thead>
+        <thead class="font-weight-black">
           <tr>
             <th>Name</th>
             <th>Category</th>

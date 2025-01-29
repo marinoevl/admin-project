@@ -1,10 +1,9 @@
 <script setup>
 import { useTheme } from 'vuetify'
 import { onMounted, onUnmounted, ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import LocateSelector from '@/components/LocateSelector.vue'
 
 const theme = useTheme()
-const { locale, availableLocales } = useI18n({})
 
 const matchMedia = ref()
 const toggleThemeActive = ref(false)
@@ -149,7 +148,7 @@ onUnmounted(() => {
 
         <!-- Profile Button -->
         <v-col cols="auto" class="d-flex align-center">
-          <v-select density="compact" v-model="locale" :items="availableLocales" />
+          <locate-selector />
           <v-btn :active="toggleThemeActive" icon @click="toggleTheme">
             <v-icon>mdi-theme-light-dark</v-icon>
           </v-btn>

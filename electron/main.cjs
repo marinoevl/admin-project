@@ -33,7 +33,7 @@ const createWindow = () => {
   log.info('App is starting...', process.env);
 
   if (process.env.NODE_ENV === 'development') {
-    console.log('Development')
+    console.log('development')
     mainWindow.loadURL('http://localhost:5173');
   } else {
     log.info('Dirname', __dirname);
